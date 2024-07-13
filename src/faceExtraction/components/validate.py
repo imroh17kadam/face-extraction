@@ -29,7 +29,7 @@ class FaceExtractor:
                 return False
             else:
                 cv2.imwrite(browsed_path, img_array)
-                return True
+                return True, boxes[0]
                 # Extract the face with highest confidence score
                 x1, y1, x2, y2 = boxes[0]
                 face = img_bgr[int(y1):int(y2), int(x1):int(x2)]

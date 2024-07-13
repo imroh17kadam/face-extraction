@@ -23,15 +23,16 @@ if uploaded_file is not None:
     if st.button("Process Image"):
         face_extractor = FaceExtractor()
         face_detector = FaceDetector(prototxt_path, model_path)
-        background_remover = BackgroundRemover(output_path, transparent_path)
 
-        input_image = face_extractor.process_image(image)
+        validation, input_image = face_extractor.process_image(image)
 
-        if input_image:
+        background_remover = BackgroundRemover(output_path, transparent_path, input_image)
+
+        if validation:
             cropped_image = face_detector.detect_and_save_face(browsed_path, output_path)
-            output_image = background_remover.remove_background()
+            output_image, output_buffer = background_remover.remove_background()
         else:
-            output_image = None
+            output_image, output_buffer = None
 
         if output_image is not None:
             st.image(output_image, caption="Extracted Face", use_column_width=True)
@@ -40,7 +41,7 @@ if uploaded_file is not None:
             st.markdown("### Download Extracted Face")
             st.download_button(
                 label="Click here to download",
-                data=output_image,
+                data=output_buffer,
                 file_name="extracted_face.png",
                 mime="image/png"
             )
