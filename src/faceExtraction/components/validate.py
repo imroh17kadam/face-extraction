@@ -3,7 +3,6 @@ import numpy as np
 from facenet_pytorch import MTCNN
 import io
 import streamlit as st
-from PIL import Image  # Import Image module from PIL
 
 
 class FaceExtractor:
@@ -30,33 +29,6 @@ class FaceExtractor:
             else:
                 cv2.imwrite(browsed_path, img_array)
                 return True, boxes[0]
-                # Extract the face with highest confidence score
-                x1, y1, x2, y2 = boxes[0]
-                face = img_bgr[int(y1):int(y2), int(x1):int(x2)]
-
-                # Convert BGR to RGB (PIL uses RGB format)
-                face_rgb = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
-                face_pil = Image.fromarray(face_rgb)
-
-                # Convert the face to PNG format with transparent background
-                face_pil = face_pil.convert("RGBA")
-                datas = face_pil.getdata()
-
-                new_data = []
-                for item in datas:
-                    if item[:3] == (0, 0, 0):
-                        new_data.append((255, 255, 255, 0))
-                    else:
-                        new_data.append(item)
-
-                face_pil.putdata(new_data)
-
-                # Save the final output
-                output_buffer = io.BytesIO()
-                face_pil.save(output_buffer, format='PNG')
-                output_buffer.seek(0)
-
-                return face_pil, output_buffer
         else:
             st.warning("No face detected. Please upload another image.")
             return None
