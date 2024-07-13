@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 # Function to perform face detection using DNN model and draw mask on the detected face
 def detect_and_draw_mask(image_path):
     # Load pre-trained face detection model from OpenCV's DNN module
-    prototxt_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\models\\deploy.prototxt.txt'
-    model_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\models\\res10_300x300_ssd_iter_140000.caffemodel'
+    prototxt_path = 'models/deploy.prototxt.txt'
+    model_path = 'models/res10_300x300_ssd_iter_140000.caffemodel'
     net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
     
     # Read the image

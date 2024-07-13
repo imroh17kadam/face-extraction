@@ -5,12 +5,12 @@ from src.faceExtraction.components.validate import FaceExtractor
 from src.faceExtraction.components.detection import FaceDetector
 from src.faceExtraction.components.background import BackgroundRemover
 
-prototxt_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\models\\deploy.prototxt.txt'
-model_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\models\\res10_300x300_ssd_iter_140000.caffemodel'
+prototxt_path = 'models/deploy.prototxt.txt'
+model_path = 'models/res10_300x300_ssd_iter_140000.caffemodel'
     
-output_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\images\\output\\detected_face.png'
-browsed_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\images\\output\\browsed_face.png'
-transparent_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\images\\output\\transparent.png'
+output_path = 'images/output/detected_face.png'
+browsed_path = 'images/output/browsed_face.png'
+transparent_path = 'images/output/transparent.png'
 
 st.title("Face Extraction from Image")
 

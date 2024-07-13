@@ -11,7 +11,7 @@ class FaceExtractor:
         self.mtcnn = MTCNN(keep_all=True)
 
     def process_image(self, image):
-        browsed_path = 'c:\\Users\\DELL\\OneDrive\\Desktop\\MachineLearning\\face-extraction\\images\\output\\browsed_face.png'
+        browsed_path = 'images/output/browsed_face.png'
 
         # Convert the image to numpy array
         img_array = np.array(image)
