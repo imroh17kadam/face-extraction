@@ -4,7 +4,7 @@ This project is designed using Streamlit where users can upload an image. After 
 
 ## Demo
 
-![demo](https://github.com/user-attachments/assets/78ce483b-4b4f-4ce1-8e60-928314d75c17)
+![demo](https://github.com/user-attachments/assets/545e983e-a73f-46d0-b047-1a4aeec163c9)
 
 ## Screenshots
 
