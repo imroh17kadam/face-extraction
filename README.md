@@ -13,22 +13,22 @@ This project is designed using Streamlit where users can upload an image. After 
 ![App Screenshot](images/screenshots/3.png)
 ![App Screenshot](images/screenshots/4.png)
 
-# How to run?
-### Steps:
+## How to run?
 
-Clone the repository
+### Step 1 - Clone the repository
 
 ```bash
 https://github.com/imroh17kadam/face-extraction
 ```
 
-### Step 1 - Checkout to branch
+### Step 2 - Checkout to branch
 ```bash
 # master is the main branch
 git checkout master
 ```
 
-### Step 2 - Create a virtual environment after opening the repository
+### Step 3 - Create a virtual environment after opening the repository
+
 #### Using Conda
 
 ```bash
@@ -49,12 +49,12 @@ python3.9 -m venv extraction
 .\extraction\Scripts\activate
 ```
 
-### Step 3 - Install the requirements
+### Step 4 - Install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4 - Run the Application
+### Step 5 - Run the Application
 ```bash
 # Finally run the following command
 streamlit run app.py
