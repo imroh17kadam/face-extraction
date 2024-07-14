@@ -9,8 +9,8 @@ This project is designed using Streamlit, Deep Learning and Computer Vision tech
 ## Screenshots
 
 ![App Screenshot](images/screenshots/1.png)
-![App Screenshot](images/screenshots/2.png)
-![App Screenshot](images/screenshots/3.png)
+![App Screenshot](images/screenshots/5.png)
+![App Screenshot](images/screenshots/6.png)
 ![App Screenshot](images/screenshots/4.png)
 
 ## How to run?

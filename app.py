@@ -27,10 +27,10 @@ if uploaded_file is not None:
 
         validation, input_image = face_validator.process_image(image)
 
-        background_remover = BackgroundRemover(output_path, transparent_path, input_image)
-
         if validation:
             cropped_image = face_detector.detect_and_save_face(browsed_path, output_path)
+
+            background_remover = BackgroundRemover(output_path, transparent_path, input_image)
             output_image, output_buffer = background_remover.remove_background()
         else:
             output_image, output_buffer = None, None
