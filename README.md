@@ -1,6 +1,6 @@
 # Face Extraction
 
-This project is designed using Streamlit where users can upload an image. After processing, the application extracts the face from the image, providing it with a transparent background.
+This project is designed using Streamlit, Deep Learning and Computer Vision techniques where users can upload an image. After processing, the application extracts the face from the image, providing it with a transparent background.
 
 ## Demo
 
