@@ -4,4 +4,6 @@ pillow
 facenet-pytorch
 opencv-python
 numpy
-
+torch
+torchvision
+-e .
