@@ -5,7 +5,7 @@ import io
 import streamlit as st
 
 
-class FaceExtractor:
+class FaceValidator:
     def __init__(self):
         # Initialize MTCNN for face detection
         self.mtcnn = MTCNN(keep_all=True)
