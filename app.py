@@ -33,7 +33,7 @@ if uploaded_file is not None:
             cropped_image = face_detector.detect_and_save_face(browsed_path, output_path)
             output_image, output_buffer = background_remover.remove_background()
         else:
-            output_image, output_buffer = None
+            output_image, output_buffer = None, None
 
         if output_image is not None:
             st.image(output_image, caption="Extracted Face", use_column_width=True)

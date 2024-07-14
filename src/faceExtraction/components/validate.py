@@ -24,7 +24,7 @@ class FaceValidator:
         if boxes is not None:
             if len(boxes) > 1:
                 st.warning("More than one face detected. Please upload an image with only one face.")
-                return False
+                return False, []
             else:
                 cv2.imwrite(browsed_path, img_array)
                 return True, boxes[0]
