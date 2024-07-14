@@ -1,11 +1,10 @@
 import cv2
 import numpy as np
 from facenet_pytorch import MTCNN
-import io
 import streamlit as st
 
 
-class FaceExtractor:
+class FaceValidator:
     def __init__(self):
         # Initialize MTCNN for face detection
         self.mtcnn = MTCNN(keep_all=True)
@@ -17,7 +16,7 @@ class FaceExtractor:
         img_array = np.array(image)
 
         # Convert RGB to BGR (OpenCV uses BGR format)
-        img_bgr = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
+        img_bgr = cv2.cvtColor(img_array, cv2.COLOR_BGR2RGB)
 
         # Detect faces
         boxes, _ = self.mtcnn.detect(img_bgr)
