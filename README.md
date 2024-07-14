@@ -46,7 +46,7 @@ python3.9 -m venv extraction
 ```
 
 ```bash
-.\extraction\Scripts\activate
+extraction\Scripts\activate
 ```
 
 ### Step 4 - Install the requirements
