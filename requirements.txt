@@ -6,4 +6,5 @@ opencv-python
 numpy
 torch
 torchvision
+rembg
 -e .
