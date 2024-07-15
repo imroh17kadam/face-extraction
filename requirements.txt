@@ -3,7 +3,7 @@ opencv-python
 opencv-python-headless
 pillow
 facenet-pytorch
-numpy
+numpy<2
 torch
 torchvision
 rembg
