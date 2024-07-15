@@ -6,7 +6,7 @@ numpy
 torch
 torchvision
 rembg
-onnxruntime-gpu
+onnxruntime-gpu==1.10.0
 pandas
 Pillow
 scipy
