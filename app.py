@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import cv2
 from src.faceExtraction.components.validate import FaceValidator
 from src.faceExtraction.components.detection import FaceDetector
 from src.faceExtraction.components.background import BackgroundRemover
