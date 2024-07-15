@@ -8,3 +8,7 @@ torchvision
 rembg
 onnxruntime-gpu
 pandas
+onnxruntime-gpu
+Pillow
+scipy
+requests
