@@ -7,6 +7,5 @@ numpy
 torch
 torchvision
 rembg
-onnxruntime
-PIL
+pandas
 -e .
